@@ -45,7 +45,7 @@ def main():
         with st.spinner("Thinking ..."):
             result = ollama.chat(model=chat_model, messages=[{
                 "role": "user",
-                "content": prompt
+                "content": prompt,
             }])
             # display the raw result
             # st.write(result)
